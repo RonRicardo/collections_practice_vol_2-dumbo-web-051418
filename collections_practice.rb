@@ -36,6 +36,5 @@ def find_cool(arr)
 end
 
 def organize_schools(arr)
-  arr.uniq
   binding.pry
 end
