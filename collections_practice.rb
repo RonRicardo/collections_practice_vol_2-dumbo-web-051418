@@ -22,7 +22,9 @@ def count_elements(arr)
    end
 end
 
-def merge_data()
+def merge_data(keys, data)
+  return keys.collect do |names|
+    names.merge(data[0][names[:first_name]])
 end
 
 def find_cool(arr)
@@ -33,5 +35,5 @@ def find_cool(arr)
 end
 
 def organize_schools(arr)
-  binding.pry
+  #binding.pry
 end
