@@ -36,7 +36,13 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  uniq_locations = schools.values.uniq
-  uniq_locations = uniq_locations.flatten
-  school_hash = Hash[uniq_locations.collect { |location| [location.values, [] ] } ]
+  organized_school = Hash.new
+  schools.each do |key, val|
+    if organized_school[val[:location]] == nil
+      organized_school[val[:location]] = [] << key
+    else
+      organized_school[val[:location]] << key
+    end
+  end
+ organized_school
 end
