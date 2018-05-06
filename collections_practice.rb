@@ -35,6 +35,7 @@ def find_cool(arr)
   cools.compact
 end
 
-def organize_schools(arr)
-  binding.pry
+def organize_schools(schools)
+  arr.values.uniq = uniq_locations
+  school_hash = Hash[uniq_locations.collect { |location| [location, [] ] } ]
 end
