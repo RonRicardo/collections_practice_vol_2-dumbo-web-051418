@@ -37,6 +37,6 @@ end
 
 def organize_schools(schools)
   uniq_locations = schools.values.uniq
+  uniq_locations = uniq_locations.flatten
   school_hash = Hash[uniq_locations.collect { |location| [location.values, [] ] } ]
-  school_hash.keys.flatten
 end
