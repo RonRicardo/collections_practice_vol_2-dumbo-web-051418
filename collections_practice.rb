@@ -36,5 +36,5 @@ def find_cool(arr)
 end
 
 def organize_schools(arr)
-  #binding.pry
+  binding.pry
 end
