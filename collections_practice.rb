@@ -36,6 +36,6 @@ def find_cool(arr)
 end
 
 def organize_schools(schools)
-  arr.values.uniq = uniq_locations
+  schools.values.uniq = uniq_locations
   school_hash = Hash[uniq_locations.collect { |location| [location, [] ] } ]
 end
