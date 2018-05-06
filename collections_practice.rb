@@ -26,7 +26,7 @@ def merge_data(keys, data)
   keys.collect do |names|
     names.merge(data[0][names[:first_name]])
   end
-  keys
+  names
 end
 
 def find_cool(arr)
